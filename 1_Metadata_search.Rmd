@@ -1,0 +1,58 @@
+Searching metadata
+========================================================
+
+We offer several ways to search metadata, `rmetadata`, and `rentrez`
+
+```{r}
+install_github("rentrez","ropensci")
+install_github("rmetadata","ropensci")
+install_github("rcrossref","ropensci")
+
+```
+
+Let's start by searching for terms with rmetadata from the crossref database.
+
+```{r search with rmetadata}
+options(stringsAsFactors=F)
+library(rcrossref)
+library(rmetadata)
+library(rentrez)
+toxo <- crossref_search(q = "toxoplasmosis")
+
+## We can also extend these to search by year, and change the number of records we have
+
+toxo2 <- crossref_search(q = "toxoplasmosis", rows = 100, year = 2010)
+
+
+### we can view these records 
+
+toxo2[34,]$doi
+toxo2[34,]$fullCitation
+
+### Doi's come back with http appended, let's strip it off
+toxo2$doi_nohttp <- gsub("http://dx.doi.org/","",toxo2$doi)
+
+#We can also see the full citation
+print(crossref_citation("10.1016/j.cub.2013.11.014"), style="Bibtex")
+print(crossref_citation(toxo2$doi_nohttp[34]),style="Bibtex")
+
+
+```
+
+
+```{r pubmed}
+test <- entrez_search(db="pubmed",term="Daphnia magna", retmax=10)
+md_getrecord(provider = "datacite", identifier = "10.1002/ps.1284" )
+
+```
+
+
+
+We can search with for than just crossref though.  Let's try searching with the [Digital Public Library of America](http://dp.la/)
+
+```{r}
+
+
+out <- dpla_basic(q="ecology", fields=c("subject", "title"), limit = 40)
+```
+
