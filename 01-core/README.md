@@ -24,9 +24,11 @@ Altmetrics, metadata search and text mining OA articles
 
 What we'll cover today
 ========================
-* Searching and plotting results from [metadata searches]
-* Searching and visualizing [altmetrics]
-* Text mining OA full text and [pubmed abstracts]
+* Searching and plotting results from [metadata searches](https://github.com/ropensci/workshops-scio14-2014-02/blob/master/01-core/1_Metadata_search.md)
+* Searching and visualizing [altmetrics](https://github.com/ropensci/workshops-scio14-2014-02/blob/master/01-core/2_Altmetrics.md)
+* Text mining OA full text and [pubmed abstracts](https://github.com/ropensci/workshops-scio14-2014-02/blob/master/01-core/3_Text_mining.md)
+
+*You can grab the extracted code* [right here](https://github.com/ropensci/workshops-scio14-2014-02/tree/master/01-core/rawSrc) 
 
 How to do this locally
 ========================
@@ -38,6 +40,7 @@ install.packages("ggplot2", dependencies = TRUE)
 install.packages("wordcount","tm","rplos")
 ```
 
+
 Then install some packages from GitHub. First install the devtools package since it will allow you to install packages directly from GitHub that haven't yet been submitted to CRAN.
 
 ```coffee
@@ -48,5 +51,6 @@ library(devtools)
 Then install some packages:
 
 ```coffee
-install_github(c("ropensci/rentrez","ropensci/rpubmed","ropensci/rAltmetric","ropensci/rAltmetric","ropensci/rmetadata","ropensci/rcrossref"))
+install_github(c("ropensci/rentrez","ropensci/rpubmed","ropensci/rAltmetric",
+"ropensci/rAltmetric","ropensci/rmetadata","ropensci/rcrossref"))
 ```

@@ -2,7 +2,8 @@
 [![](ropensci_logo.png)](http://ropensci.org/)
 # SCIO14 Workshop
 
-**February 29th, 10:30 - 12:00**
+**February 29th, 10:30 - 1:00**
+SCIO14!
 
 **
 
@@ -18,12 +19,12 @@ You'll be able to copy-paste all of the code provided here directly into RStudio
 
 |Topic|Time|
 |---------------|-------|
-|**Setup-Make sure all widgets are whirling**| 1:00 - 1:05 |
-|**Introduction to rOpenSci** [slides](http://bit.ly/ro-unc) | 1:05 - 1:30 |
-|**Biodiversity records**  | 1:30 - 2:30 |
-|**Break**| 2:30 - 2:45 |
-|**Creating maps** | 2:45 - 3:45 |
-|**Wrap up and discussion**  | 3:45 - 4:00 |
+|**Setup-Make sure all widgets are whirling**| 10:30 - 10:35 |
+|**Introduction to rOpenSci** [slides](http://bit.ly/ro-scio14-pres) | 10:35 - 11:00 |
+|**Metadata and Altmetrics**  | 11:00 - 11:45 |
+|**Break**| 11:45 - 12:00 |
+|**Creating maps** | 12:00 - 12:45 |
+|**Wrap up and discussion**  | 12:45 - 1:00  |
 
 ## Feedback
 
