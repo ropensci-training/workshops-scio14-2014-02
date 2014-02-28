@@ -1,8 +1,14 @@
 
 ## ------------------------------------------------------------------------
+library(devtools)
 #install_github("rentrez","ropensci")
 #install_github("rmetadata","ropensci")
 #install_github("rcrossref","ropensci")
+#install_github("raltmetric","ropensci")
+#install_github("alm","ropensci")
+#install_github("rcrossref","ropensci")
+#install.packages("tm")
+#install.packages("wordcloud")
 
 
 
